@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="style/common.css"/>
+    <link rel="stylesheet" href="style/calendar.css"/>
+    <link rel="stylesheet" href="style/month.css"/>
+    <link rel="stylesheet" href="style/header.css"/>
+    <script src="build.js"></script>
+    <title>Document</title>
+</head>
+<body onload="startTime()">
+
+<div class="header">
+    <div class="header__data">
+        <div id="getDate"></div>
+
+    </div>
+    <div class="header__data">
+        <div id="txt"></div>
+    </div>
+</div>
+
+<div class="month">
+
+    <!--id "buttons" for js manipulations-->
+    <div id="buttons">
+        <div class="month__arrow">
+            <div id="monthPrevious">←</div>
+        </div>
+        <div class="month__item">
+            <div id="getMonth"></div>
+        </div>
+        <div class="month__arrow">
+            <div id="monthNext">→</div>
+        </div>
+
+    </div>
+
+</div>
+
+<main id="calendar-grid" class="calendar"></main>
+
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<script src="js/getMonth.js"></script>
+<script src="js/getDate.js"></script>
+<script src="js/timeClock.js"></script>
+
+
+
+</body>
+</html>
